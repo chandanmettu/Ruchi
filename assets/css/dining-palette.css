@@ -79,7 +79,6 @@ html[data-palette] .primary-button { background:var(--selected); color:var(--on-
 html[data-palette] .release-list li > div { background:var(--glass); border-color:var(--edge); }
 html[data-palette] :is(.release-icon,.roadmap-emblem) { background:var(--accent-soft); color:var(--accent); border-color:var(--edge); box-shadow:none; }
 html[data-palette] .release-list::before { background:linear-gradient(var(--accent),var(--line)); }
-html[data-palette] .footer-credit a { text-decoration-color:var(--line); }
 
 html[data-palette] .food-title { color:var(--ink); }
 html[data-palette] .food-card { transition:transform 350ms var(--ease),box-shadow 350ms var(--ease),border-color 350ms; }
