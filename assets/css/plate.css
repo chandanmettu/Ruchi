@@ -41,6 +41,7 @@
 .plate-row h4 { font-size:14px; line-height:1.3; margin:0 0 4px; font-weight:550; }
 .plate-row-copy { min-width:0; }
 .plate-edit { font-size:10px; padding:6px 0; color:var(--muted); background:none; text-align:left; }
+.plate-row-energy { display:block; color:var(--muted); font-size:11px; line-height:1.35; }
 .plate-stepper { display:flex; align-items:center; border:1px solid var(--edge); background:var(--glass); border-radius:20px; }
 .plate-stepper button { width:34px; height:38px; background:none; font-size:20px; color:var(--accent); }
 .plate-stepper button:disabled { opacity:.3; cursor:default; }
@@ -51,6 +52,7 @@
 .plate-empty h3 { font-size:20px; letter-spacing:-.5px; }
 .plate-empty p { font-size:13px; color:var(--muted); line-height:1.6; margin:10px 0 23px; }
 .plate-nutrition-editor { margin:18px 0; border:1px solid var(--line); border-radius:18px; padding:13px; }
+#food-dialog .estimate-note { margin:16px 0; padding:12px 14px; border:1px solid var(--edge); border-radius:15px; background:var(--glass); color:var(--ink); font-size:12px; line-height:1.5; text-align:left; }
 .plate-nutrition-editor summary { cursor:pointer; font-size:13px; font-weight:500; }
 .plate-nutrition-editor summary span { color:var(--muted); font-weight:400; font-size:11px; }
 .plate-nutrition-editor p { font-size:11px; color:var(--muted); line-height:1.5; }
@@ -58,6 +60,11 @@
 .plate-nutrition-fields label { min-width:0; font-size:11px; color:var(--muted); }
 .plate-nutrition-fields input { display:block; width:100%; min-width:0; padding:11px; margin-top:5px; font:inherit; font-size:16px; color:var(--ink); background:var(--glass); border:1px solid var(--line); border-radius:12px; }
 #plate-nutrition-error { color:#a43929; }
+@media(min-width:1024px){
+ .final-menu .apricot-app { max-width:min(1120px,calc(100% - 200px)); }
+ .final-menu .app-dock { position:fixed; left:12px; right:auto; top:50%; bottom:auto; transform:translateY(-50%); width:76px; max-width:none; flex-direction:column; gap:4px; padding:7px; border-radius:28px; }
+ .final-menu .app-dock button { width:60px; min-height:60px; height:auto; }
+}
 @media(max-width:650px){
  .final-menu .journal-menu-header { flex-wrap:wrap; gap:12px; }
  .final-menu .journal-menu-header>div:first-child { flex:1; }

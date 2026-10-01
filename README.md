@@ -1,8 +1,8 @@
 # Ruchi
 
-Ruchi is a dining menu companion for IIT Hyderabad. Browse the next seven days of meals, check service hours, filter dishes, and see the prices of paid extras. My Plate lets you log what you eat and review nutrition totals when you add nutrition values.
+Ruchi is a dining menu companion for IIT Hyderabad. Browse the next seven days of meals, check service hours, filter dishes, and see the prices of paid extras. My Plate lets you log what you eat and see rough per-portion calorie, protein, carbohydrate, and fat estimates that scale with the amount you ate.
 
-AI-assisted nutrition estimates and daily-goal guidance are planned. The aim is to give you a rough overview of your diet and help you build healthier habits. Any future estimates will be approximate, not medically validated, and not a substitute for professional dietary or medical advice.
+The current estimates use a static reference table of typical cooked servings; they are not AI calculations or measured mess recipes. You can edit them for your portion. They are for general awareness, not medically validated advice. AI-assisted estimates and daily-goal guidance remain planned.
 
 Try Ruchi at [ruchi.chandanmettu.com](https://ruchi.chandanmettu.com/). The included campus menu data is an example; confirm current dishes and prices at the mess.
 
@@ -26,9 +26,10 @@ Publish the contents of this repository as a static site, with `index.html` at t
 - Displays the next seven days using a repeating menu rotation.
 - Supports card and list views, dietary filters, and saved dishes.
 - Stores My Plate entries and report drafts only in your browser.
+- Prefills editable nutrition estimates for typical servings and scales them with half or full portions.
 - Generates a report email draft for review; it never sends one automatically.
 
-The included menu is a source-backed example, not a live feed. Photos are illustrative and may depict a dish family rather than the exact serving. Nutrition values remain blank unless the user enters them.
+The included menu is a source-backed example, not a live feed. Photos are illustrative and may depict a dish family rather than the exact serving. Uncertain photo matches use a food icon. [Nutrition estimate methods and sources](docs/NUTRITION_ESTIMATES.md) explain the serving assumptions and limitations.
 
 ## Project layout
 
@@ -37,12 +38,13 @@ The included menu is a source-backed example, not a live feed. Photos are illust
 | `index.html` | App entry point |
 | `assets/js/` | Menu, schedule, saved dishes, plate, and report behaviour |
 | `assets/data/` | Example menu, extras, and notices |
+| `assets/data/nutrition-estimates.json` | Typical-serving calorie and macro estimates |
 | `assets/css/` | App styles |
 | `assets/images/` | Illustrative food images and their source records |
 | `menu-photo-credits.html` | Photo attribution and usage notes |
 | `tests/` | Menu data checks |
 
-Run the menu checks with `node --test tests/menu-catalog.test.js` if Node.js is installed.
+Run the menu, photo, and nutrition checks with `node --test tests/*.test.js` if Node.js is installed.
 
 ## Credits and use
 

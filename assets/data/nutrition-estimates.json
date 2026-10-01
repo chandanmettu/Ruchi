@@ -1,0 +1,1147 @@
+{
+  "version": 1,
+  "kind": "illustrative-per-portion-estimates",
+  "method": "Typical cooked Indian servings inferred from food-composition references and recipe assumptions; not measured mess recipes. Values are rounded and can vary with recipe, oil, sugar, and serving size.",
+  "sources": [
+    {
+      "name": "ICMR-NIN Indian Food Composition Tables 2017",
+      "url": "https://www.nin.res.in/ebooks/IFCT2017.pdf"
+    },
+    {
+      "name": "USDA FoodData Central",
+      "url": "https://fdc.nal.usda.gov/"
+    },
+    {
+      "name": "ICMR-NIN Dietary Guidelines for Indians 2024",
+      "url": "https://www.nin.res.in/dietaryguidelines/pdfjs/locale/DGI24thJune2024fin.pdf"
+    }
+  ],
+  "profiles": {
+    "milk": {
+      "serving": "200 ml milk",
+      "kcal": 120,
+      "protein": 7,
+      "carbs": 10,
+      "fat": 6
+    },
+    "tea": {
+      "serving": "150 ml milk tea",
+      "kcal": 85,
+      "protein": 2,
+      "carbs": 13,
+      "fat": 3
+    },
+    "lemon-tea": {
+      "serving": "150 ml tea with sugar",
+      "kcal": 25,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 0
+    },
+    "coffee": {
+      "serving": "150 ml milk coffee",
+      "kcal": 90,
+      "protein": 3,
+      "carbs": 12,
+      "fat": 3
+    },
+    "malt-drink": {
+      "serving": "200 ml milk + 20 g mix",
+      "kcal": 190,
+      "protein": 8,
+      "carbs": 28,
+      "fat": 6
+    },
+    "lassi": {
+      "serving": "200 ml sweet lassi",
+      "kcal": 180,
+      "protein": 6,
+      "carbs": 25,
+      "fat": 6
+    },
+    "buttermilk": {
+      "serving": "200 ml",
+      "kcal": 60,
+      "protein": 3,
+      "carbs": 6,
+      "fat": 2
+    },
+    "bread": {
+      "serving": "2 slices, about 60 g",
+      "kcal": 150,
+      "protein": 5,
+      "carbs": 28,
+      "fat": 2
+    },
+    "butter": {
+      "serving": "10 g",
+      "kcal": 72,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 8
+    },
+    "jam": {
+      "serving": "15 g",
+      "kcal": 40,
+      "protein": 0,
+      "carbs": 10,
+      "fat": 0
+    },
+    "cornflakes": {
+      "serving": "25 g dry cereal",
+      "kcal": 95,
+      "protein": 2,
+      "carbs": 21,
+      "fat": 0
+    },
+    "oats": {
+      "serving": "25 g dry oats",
+      "kcal": 95,
+      "protein": 4,
+      "carbs": 17,
+      "fat": 2
+    },
+    "egg": {
+      "serving": "1 large boiled egg",
+      "kcal": 75,
+      "protein": 6,
+      "carbs": 1,
+      "fat": 5
+    },
+    "egg-fry": {
+      "serving": "1 egg with cooking oil",
+      "kcal": 120,
+      "protein": 7,
+      "carbs": 2,
+      "fat": 9
+    },
+    "omelette": {
+      "serving": "1 egg with cooking oil",
+      "kcal": 110,
+      "protein": 7,
+      "carbs": 1,
+      "fat": 8
+    },
+    "banana": {
+      "serving": "1 medium banana",
+      "kcal": 105,
+      "protein": 1,
+      "carbs": 27,
+      "fat": 0
+    },
+    "rice": {
+      "serving": "150 g cooked rice",
+      "kcal": 195,
+      "protein": 4,
+      "carbs": 43,
+      "fat": 0
+    },
+    "curd": {
+      "serving": "100 g plain curd",
+      "kcal": 60,
+      "protein": 4,
+      "carbs": 5,
+      "fat": 3
+    },
+    "raita": {
+      "serving": "100 g yogurt with vegetables",
+      "kcal": 110,
+      "protein": 4,
+      "carbs": 10,
+      "fat": 6
+    },
+    "papad": {
+      "serving": "1 roasted or lightly fried papad",
+      "kcal": 55,
+      "protein": 2,
+      "carbs": 8,
+      "fat": 2
+    },
+    "fryums": {
+      "serving": "1 small serving, about 25 g",
+      "kcal": 100,
+      "protein": 1,
+      "carbs": 14,
+      "fat": 4
+    },
+    "sambar": {
+      "serving": "150 ml bowl",
+      "kcal": 100,
+      "protein": 5,
+      "carbs": 13,
+      "fat": 3
+    },
+    "rasam": {
+      "serving": "150 ml bowl",
+      "kcal": 45,
+      "protein": 1,
+      "carbs": 7,
+      "fat": 1
+    },
+    "peanut-chutney": {
+      "serving": "2 tbsp, about 40 g",
+      "kcal": 120,
+      "protein": 4,
+      "carbs": 5,
+      "fat": 9
+    },
+    "coconut-chutney": {
+      "serving": "2 tbsp, about 40 g",
+      "kcal": 110,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 10
+    },
+    "tomato-chutney": {
+      "serving": "2 tbsp, about 40 g",
+      "kcal": 45,
+      "protein": 1,
+      "carbs": 6,
+      "fat": 2
+    },
+    "herb-chutney": {
+      "serving": "2 tbsp, about 40 g",
+      "kcal": 30,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 1
+    },
+    "vegetable-chutney": {
+      "serving": "2 tbsp, about 40 g",
+      "kcal": 50,
+      "protein": 1,
+      "carbs": 7,
+      "fat": 2
+    },
+    "podi": {
+      "serving": "1 tbsp, about 15 g",
+      "kcal": 75,
+      "protein": 3,
+      "carbs": 6,
+      "fat": 4
+    },
+    "ghee": {
+      "serving": "1 tsp, about 5 g",
+      "kcal": 45,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 5
+    },
+    "pickle": {
+      "serving": "1 tbsp, about 20 g",
+      "kcal": 45,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 4
+    },
+    "dal": {
+      "serving": "150 ml bowl",
+      "kcal": 140,
+      "protein": 8,
+      "carbs": 20,
+      "fat": 4
+    },
+    "rich-dal": {
+      "serving": "150 ml bowl",
+      "kcal": 200,
+      "protein": 8,
+      "carbs": 20,
+      "fat": 10
+    },
+    "boiled-legumes": {
+      "serving": "50 g cooked legumes",
+      "kcal": 80,
+      "protein": 5,
+      "carbs": 13,
+      "fat": 0
+    },
+    "boiled-peanuts": {
+      "serving": "50 g boiled peanuts",
+      "kcal": 160,
+      "protein": 7,
+      "carbs": 8,
+      "fat": 12
+    },
+    "boiled-corn": {
+      "serving": "100 g sweet corn",
+      "kcal": 95,
+      "protein": 3,
+      "carbs": 21,
+      "fat": 1
+    },
+    "sprouts": {
+      "serving": "50 g sprouts",
+      "kcal": 40,
+      "protein": 3,
+      "carbs": 7,
+      "fat": 0
+    },
+    "salad": {
+      "serving": "100 g vegetables",
+      "kcal": 30,
+      "protein": 2,
+      "carbs": 6,
+      "fat": 0
+    },
+    "pineapple": {
+      "serving": "150 g pineapple",
+      "kcal": 75,
+      "protein": 1,
+      "carbs": 19,
+      "fat": 0
+    },
+    "watermelon": {
+      "serving": "150 g watermelon",
+      "kcal": 45,
+      "protein": 1,
+      "carbs": 11,
+      "fat": 0
+    },
+    "papaya": {
+      "serving": "150 g papaya",
+      "kcal": 65,
+      "protein": 1,
+      "carbs": 16,
+      "fat": 0
+    },
+    "muskmelon": {
+      "serving": "150 g muskmelon",
+      "kcal": 50,
+      "protein": 1,
+      "carbs": 12,
+      "fat": 0
+    },
+    "fruit-salad": {
+      "serving": "150 g mixed fruit",
+      "kcal": 80,
+      "protein": 1,
+      "carbs": 20,
+      "fat": 0
+    },
+    "fruit-custard": {
+      "serving": "150 g fruit custard",
+      "kcal": 170,
+      "protein": 4,
+      "carbs": 28,
+      "fat": 5
+    },
+    "idli": {
+      "serving": "2 medium idlis, about 100 g",
+      "kcal": 120,
+      "protein": 4,
+      "carbs": 25,
+      "fat": 1
+    },
+    "ragi-idli": {
+      "serving": "2 medium ragi idlis",
+      "kcal": 130,
+      "protein": 4,
+      "carbs": 26,
+      "fat": 1
+    },
+    "fried-idli": {
+      "serving": "150 g fried idli",
+      "kcal": 240,
+      "protein": 5,
+      "carbs": 30,
+      "fat": 11
+    },
+    "dosa": {
+      "serving": "1 medium dosa, about 120 g",
+      "kcal": 180,
+      "protein": 4,
+      "carbs": 27,
+      "fat": 6
+    },
+    "kal-dosa": {
+      "serving": "1 thicker dosa, about 150 g",
+      "kcal": 210,
+      "protein": 5,
+      "carbs": 33,
+      "fat": 6
+    },
+    "masala-dosa": {
+      "serving": "1 filled dosa, about 220 g",
+      "kcal": 320,
+      "protein": 7,
+      "carbs": 46,
+      "fat": 12
+    },
+    "pesarattu": {
+      "serving": "1 medium pesarattu, about 150 g",
+      "kcal": 220,
+      "protein": 10,
+      "carbs": 30,
+      "fat": 7
+    },
+    "uttapam": {
+      "serving": "1 medium uttapam, about 180 g",
+      "kcal": 260,
+      "protein": 7,
+      "carbs": 38,
+      "fat": 9
+    },
+    "vada": {
+      "serving": "1 medium vada, about 70 g",
+      "kcal": 180,
+      "protein": 5,
+      "carbs": 20,
+      "fat": 9
+    },
+    "punugulu": {
+      "serving": "4 small pieces, about 100 g",
+      "kcal": 180,
+      "protein": 4,
+      "carbs": 23,
+      "fat": 8
+    },
+    "bajji": {
+      "serving": "2 small pieces, about 100 g",
+      "kcal": 200,
+      "protein": 4,
+      "carbs": 26,
+      "fat": 9
+    },
+    "pongal": {
+      "serving": "200 g bowl",
+      "kcal": 300,
+      "protein": 8,
+      "carbs": 40,
+      "fat": 11
+    },
+    "poha": {
+      "serving": "200 g bowl",
+      "kcal": 280,
+      "protein": 6,
+      "carbs": 45,
+      "fat": 8
+    },
+    "sev-poha": {
+      "serving": "200 g bowl with sev",
+      "kcal": 330,
+      "protein": 6,
+      "carbs": 48,
+      "fat": 13
+    },
+    "semiya-upma": {
+      "serving": "200 g bowl",
+      "kcal": 300,
+      "protein": 7,
+      "carbs": 48,
+      "fat": 8
+    },
+    "pav-bhaji": {
+      "serving": "1 plate: 2 pav + bhaji",
+      "kcal": 430,
+      "protein": 10,
+      "carbs": 60,
+      "fat": 17
+    },
+    "aloo-paratha": {
+      "serving": "1 medium stuffed paratha",
+      "kcal": 300,
+      "protein": 7,
+      "carbs": 40,
+      "fat": 12
+    },
+    "onion-paratha": {
+      "serving": "1 medium stuffed paratha",
+      "kcal": 310,
+      "protein": 7,
+      "carbs": 42,
+      "fat": 12
+    },
+    "roti": {
+      "serving": "1 medium roti",
+      "kcal": 110,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 2
+    },
+    "ghee-roti": {
+      "serving": "1 roti + 1 tsp ghee",
+      "kcal": 155,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 7
+    },
+    "puri": {
+      "serving": "2 medium puris",
+      "kcal": 200,
+      "protein": 4,
+      "carbs": 26,
+      "fat": 10
+    },
+    "bhatura": {
+      "serving": "1 medium bhatura",
+      "kcal": 270,
+      "protein": 6,
+      "carbs": 35,
+      "fat": 12
+    },
+    "jeera-rice": {
+      "serving": "180 g cooked rice",
+      "kcal": 240,
+      "protein": 4,
+      "carbs": 44,
+      "fat": 5
+    },
+    "curd-rice": {
+      "serving": "200 g bowl",
+      "kcal": 240,
+      "protein": 6,
+      "carbs": 36,
+      "fat": 7
+    },
+    "pulao": {
+      "serving": "200 g cooked pulao",
+      "kcal": 290,
+      "protein": 6,
+      "carbs": 48,
+      "fat": 8
+    },
+    "fried-rice": {
+      "serving": "200 g cooked fried rice",
+      "kcal": 320,
+      "protein": 7,
+      "carbs": 50,
+      "fat": 10
+    },
+    "tamarind-rice": {
+      "serving": "200 g cooked rice",
+      "kcal": 330,
+      "protein": 5,
+      "carbs": 50,
+      "fat": 13
+    },
+    "chicken-biryani": {
+      "serving": "300 g plate",
+      "kcal": 620,
+      "protein": 28,
+      "carbs": 65,
+      "fat": 25
+    },
+    "paneer-biryani": {
+      "serving": "300 g plate",
+      "kcal": 650,
+      "protein": 22,
+      "carbs": 65,
+      "fat": 28
+    },
+    "veg-curry": {
+      "serving": "150 g bowl",
+      "kcal": 150,
+      "protein": 4,
+      "carbs": 17,
+      "fat": 7
+    },
+    "dry-sabzi": {
+      "serving": "120 g serving",
+      "kcal": 125,
+      "protein": 3,
+      "carbs": 15,
+      "fat": 6
+    },
+    "aloo-sabzi": {
+      "serving": "150 g serving",
+      "kcal": 190,
+      "protein": 3,
+      "carbs": 28,
+      "fat": 8
+    },
+    "aloo-fry": {
+      "serving": "100 g fried potato",
+      "kcal": 300,
+      "protein": 3,
+      "carbs": 40,
+      "fat": 15
+    },
+    "aloo-poppy": {
+      "serving": "150 g serving",
+      "kcal": 230,
+      "protein": 4,
+      "carbs": 24,
+      "fat": 13
+    },
+    "chana-curry": {
+      "serving": "150 g bowl",
+      "kcal": 210,
+      "protein": 10,
+      "carbs": 31,
+      "fat": 6
+    },
+    "chole": {
+      "serving": "180 g bowl",
+      "kcal": 260,
+      "protein": 12,
+      "carbs": 38,
+      "fat": 8
+    },
+    "lobia": {
+      "serving": "180 g bowl",
+      "kcal": 230,
+      "protein": 12,
+      "carbs": 35,
+      "fat": 5
+    },
+    "rajma": {
+      "serving": "180 g bowl",
+      "kcal": 230,
+      "protein": 12,
+      "carbs": 35,
+      "fat": 5
+    },
+    "lauki-chana": {
+      "serving": "150 g bowl",
+      "kcal": 160,
+      "protein": 7,
+      "carbs": 20,
+      "fat": 6
+    },
+    "kadhi": {
+      "serving": "200 g bowl",
+      "kcal": 220,
+      "protein": 7,
+      "carbs": 25,
+      "fat": 10
+    },
+    "paneer-curry": {
+      "serving": "150 g bowl",
+      "kcal": 300,
+      "protein": 15,
+      "carbs": 12,
+      "fat": 22
+    },
+    "paneer-butter": {
+      "serving": "180 g bowl",
+      "kcal": 390,
+      "protein": 17,
+      "carbs": 16,
+      "fat": 29
+    },
+    "methi-matar-paneer": {
+      "serving": "180 g bowl",
+      "kcal": 330,
+      "protein": 15,
+      "carbs": 18,
+      "fat": 24
+    },
+    "egg-curry": {
+      "serving": "2 eggs + gravy, about 250 g",
+      "kcal": 300,
+      "protein": 15,
+      "carbs": 13,
+      "fat": 20
+    },
+    "chicken-curry": {
+      "serving": "200 g bowl",
+      "kcal": 350,
+      "protein": 28,
+      "carbs": 10,
+      "fat": 22
+    },
+    "fish-curry": {
+      "serving": "150 g: fish + gravy",
+      "kcal": 220,
+      "protein": 19,
+      "carbs": 7,
+      "fat": 13
+    },
+    "soya-chilli": {
+      "serving": "150 g serving",
+      "kcal": 250,
+      "protein": 20,
+      "carbs": 18,
+      "fat": 11
+    },
+    "veg-manchurian": {
+      "serving": "150 g serving",
+      "kcal": 300,
+      "protein": 7,
+      "carbs": 35,
+      "fat": 15
+    },
+    "korma": {
+      "serving": "150 g bowl",
+      "kcal": 230,
+      "protein": 5,
+      "carbs": 20,
+      "fat": 15
+    },
+    "methi-matar": {
+      "serving": "180 g bowl",
+      "kcal": 260,
+      "protein": 8,
+      "carbs": 20,
+      "fat": 17
+    },
+    "kara-kulambu": {
+      "serving": "150 ml bowl",
+      "kcal": 130,
+      "protein": 3,
+      "carbs": 17,
+      "fat": 6
+    },
+    "aloo-tikki-chaat": {
+      "serving": "1 plate, about 200 g",
+      "kcal": 300,
+      "protein": 7,
+      "carbs": 45,
+      "fat": 10
+    },
+    "bhel-puri": {
+      "serving": "1 bowl, about 150 g",
+      "kcal": 230,
+      "protein": 6,
+      "carbs": 38,
+      "fat": 7
+    },
+    "dahi-puri": {
+      "serving": "6 pieces",
+      "kcal": 320,
+      "protein": 8,
+      "carbs": 48,
+      "fat": 11
+    },
+    "papdi-chaat": {
+      "serving": "1 plate, about 200 g",
+      "kcal": 370,
+      "protein": 8,
+      "carbs": 50,
+      "fat": 16
+    },
+    "masala-puri": {
+      "serving": "6 pieces",
+      "kcal": 380,
+      "protein": 8,
+      "carbs": 52,
+      "fat": 15
+    },
+    "samosa-chaat": {
+      "serving": "1 plate, about 250 g",
+      "kcal": 450,
+      "protein": 10,
+      "carbs": 55,
+      "fat": 22
+    },
+    "crispy-corn": {
+      "serving": "50 g serving",
+      "kcal": 140,
+      "protein": 3,
+      "carbs": 18,
+      "fat": 7
+    },
+    "baby-corn": {
+      "serving": "65 g serving",
+      "kcal": 100,
+      "protein": 2,
+      "carbs": 14,
+      "fat": 4
+    },
+    "bread-pakoda": {
+      "serving": "1 piece",
+      "kcal": 200,
+      "protein": 4,
+      "carbs": 24,
+      "fat": 10
+    },
+    "egg-bonda": {
+      "serving": "1 piece",
+      "kcal": 170,
+      "protein": 7,
+      "carbs": 12,
+      "fat": 10
+    },
+    "egg-bhurji": {
+      "serving": "2 eggs with onion and oil",
+      "kcal": 230,
+      "protein": 13,
+      "carbs": 6,
+      "fat": 17
+    },
+    "cutlet": {
+      "serving": "1 piece, about 80 g",
+      "kcal": 160,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 8
+    },
+    "samosa": {
+      "serving": "100 g samosa",
+      "kcal": 280,
+      "protein": 5,
+      "carbs": 36,
+      "fat": 13
+    },
+    "kachori": {
+      "serving": "1 medium piece",
+      "kcal": 250,
+      "protein": 6,
+      "carbs": 30,
+      "fat": 13
+    },
+    "masala-vada": {
+      "serving": "2 pieces",
+      "kcal": 280,
+      "protein": 8,
+      "carbs": 32,
+      "fat": 13
+    },
+    "mirchi-bajji": {
+      "serving": "2 pieces",
+      "kcal": 230,
+      "protein": 5,
+      "carbs": 28,
+      "fat": 11
+    },
+    "sabudana-vada": {
+      "serving": "2 pieces",
+      "kcal": 300,
+      "protein": 4,
+      "carbs": 38,
+      "fat": 15
+    },
+    "vada-pav": {
+      "serving": "2 pieces",
+      "kcal": 600,
+      "protein": 12,
+      "carbs": 80,
+      "fat": 26
+    },
+    "momos": {
+      "serving": "3 vegetable momos",
+      "kcal": 150,
+      "protein": 5,
+      "carbs": 25,
+      "fat": 3
+    },
+    "mushroom-65": {
+      "serving": "100 g serving",
+      "kcal": 230,
+      "protein": 5,
+      "carbs": 20,
+      "fat": 15
+    },
+    "mushroom-chilli": {
+      "serving": "100 g serving",
+      "kcal": 220,
+      "protein": 6,
+      "carbs": 22,
+      "fat": 12
+    },
+    "mushroom-masala": {
+      "serving": "100 g: mushroom + gravy",
+      "kcal": 140,
+      "protein": 4,
+      "carbs": 10,
+      "fat": 9
+    },
+    "paneer-bhurji": {
+      "serving": "100 g serving",
+      "kcal": 270,
+      "protein": 15,
+      "carbs": 8,
+      "fat": 20
+    },
+    "paneer-manchurian": {
+      "serving": "150 g serving",
+      "kcal": 360,
+      "protein": 15,
+      "carbs": 25,
+      "fat": 22
+    },
+    "chilli-chicken": {
+      "serving": "150 g serving",
+      "kcal": 340,
+      "protein": 25,
+      "carbs": 20,
+      "fat": 18
+    },
+    "butter-chicken": {
+      "serving": "200 g bowl",
+      "kcal": 430,
+      "protein": 29,
+      "carbs": 13,
+      "fat": 29
+    },
+    "pepper-chicken": {
+      "serving": "200 g bowl",
+      "kcal": 350,
+      "protein": 30,
+      "carbs": 9,
+      "fat": 21
+    },
+    "chicken-extras": {
+      "serving": "200 g bowl",
+      "kcal": 360,
+      "protein": 30,
+      "carbs": 10,
+      "fat": 22
+    },
+    "chicken-biryani-extra": {
+      "serving": "550 g: 150 g chicken + 400 g rice",
+      "kcal": 900,
+      "protein": 45,
+      "carbs": 105,
+      "fat": 32
+    },
+    "paneer-biryani-extra": {
+      "serving": "500 g: 100 g paneer + 400 g rice",
+      "kcal": 950,
+      "protein": 32,
+      "carbs": 103,
+      "fat": 44
+    },
+    "gulab-jamun": {
+      "serving": "1 piece",
+      "kcal": 150,
+      "protein": 2,
+      "carbs": 25,
+      "fat": 5
+    },
+    "jalebi": {
+      "serving": "1 serving, about 50 g",
+      "kcal": 150,
+      "protein": 2,
+      "carbs": 25,
+      "fat": 6
+    },
+    "balushahi": {
+      "serving": "1 piece, about 75 g",
+      "kcal": 260,
+      "protein": 4,
+      "carbs": 30,
+      "fat": 14
+    },
+    "rasmalai": {
+      "serving": "1 piece",
+      "kcal": 180,
+      "protein": 7,
+      "carbs": 22,
+      "fat": 7
+    },
+    "payasam": {
+      "serving": "150 ml bowl",
+      "kcal": 220,
+      "protein": 5,
+      "carbs": 30,
+      "fat": 9
+    }
+  },
+  "items": {
+    "1-banana": "banana",
+    "1-boiled-egg": "egg",
+    "1-egg-omelette": "omelette",
+    "aloo-fingers-fry": "aloo-fry",
+    "aloo-methi-dry": "dry-sabzi",
+    "aloo-paratha": "aloo-paratha",
+    "aloo-poppy-seed-curry": "aloo-poppy",
+    "anda-curry": "egg-curry",
+    "anda-curry-kadai-paneer": "egg-curry",
+    "andhra-style-sambar": "sambar",
+    "balushahi": "balushahi",
+    "bendakaya-pulusu": "veg-curry",
+    "bhatura": "bhatura",
+    "bhatura-or-puri": "puri",
+    "black-chana-curry": "chana-curry",
+    "boiled-black-chana": "boiled-legumes",
+    "boiled-chana-with-tadka": "boiled-legumes",
+    "boiled-corn": "boiled-corn",
+    "boiled-egg-fry": "egg-fry",
+    "boiled-egg-fry-paneer-kolhapuri": "egg-fry",
+    "boiled-green-gram-with-tadka": "boiled-legumes",
+    "boiled-peanuts": "boiled-peanuts",
+    "boondi-raita": "raita",
+    "boost": "malt-drink",
+    "bournvita": "malt-drink",
+    "bread": "bread",
+    "butter": "butter",
+    "buttermilk": "buttermilk",
+    "cabbage-65": "dry-sabzi",
+    "cabbage-peas-sabzi": "dry-sabzi",
+    "cardamom-tea": "tea",
+    "carrot-beans-peas-poriyal": "dry-sabzi",
+    "chettinad-egg-curry": "egg-curry",
+    "chettinad-egg-curry-methi-malai-matar-paneer": "egg-curry",
+    "chicken-dum-biryani": "chicken-biryani",
+    "chicken-or-paneer-dum-biryani": "chicken-biryani",
+    "chole-curry": "chole",
+    "chutney": "vegetable-chutney",
+    "cluster-beans-curry": "veg-curry",
+    "coconut-chutney": "coconut-chutney",
+    "coffee": "coffee",
+    "cold-milk": "milk",
+    "coriander-chutney": "herb-chutney",
+    "corn-capsicum-masala": "dry-sabzi",
+    "cornflakes": "cornflakes",
+    "cornflakes-or-oats": "cornflakes",
+    "curd": "curd",
+    "curd-rice-daddojanam": "curd-rice",
+    "dal-fry": "dal",
+    "dal-makhani": "rich-dal",
+    "dal-tadka": "dal",
+    "dondakaya-peanut-dry-sabzi": "dry-sabzi",
+    "dondakaya-semi-gravy": "dry-sabzi",
+    "dosakaya-chutney": "vegetable-chutney",
+    "drumstick-sambar": "sambar",
+    "egg-or-banana": "egg",
+    "extra-aloo-tikki-chaat": "aloo-tikki-chaat",
+    "extra-baby-corn": "baby-corn",
+    "extra-banana": "banana",
+    "extra-bhel-puri": "bhel-puri",
+    "extra-boiled-egg": "egg",
+    "extra-bread-pakoda": "bread-pakoda",
+    "extra-butter-chicken": "butter-chicken",
+    "extra-chettinad-chicken": "chicken-extras",
+    "extra-chicken-biryani": "chicken-biryani-extra",
+    "extra-chicken-dum-biryani": "chicken-biryani-extra",
+    "extra-chicken-kolhapuri": "chicken-extras",
+    "extra-chicken-laal-maas": "chicken-extras",
+    "extra-chicken-manchurian": "chilli-chicken",
+    "extra-chicken-masala": "chicken-extras",
+    "extra-chilli-chicken": "chilli-chicken",
+    "extra-crispy-corn": "crispy-corn",
+    "extra-cutlet": "cutlet",
+    "extra-dahi-aloo-papdi-chaat": "papdi-chaat",
+    "extra-dahi-puri": "dahi-puri",
+    "extra-dal-kachori": "kachori",
+    "extra-egg-bhurji": "egg-bhurji",
+    "extra-egg-bonda": "egg-bonda",
+    "extra-egg-gravy": "egg-curry",
+    "extra-fish-gravy": "fish-curry",
+    "extra-masala-puri": "masala-puri",
+    "extra-masala-vada": "masala-vada",
+    "extra-mirchi-bajji": "mirchi-bajji",
+    "extra-mushroom-65": "mushroom-65",
+    "extra-mushroom-chilli": "mushroom-chilli",
+    "extra-mushroom-masala": "mushroom-masala",
+    "extra-omelette": "omelette",
+    "extra-paneer-bhurji": "paneer-bhurji",
+    "extra-paneer-biryani": "paneer-biryani-extra",
+    "extra-paneer-butter-masala": "paneer-butter",
+    "extra-paneer-dum-biryani": "paneer-biryani-extra",
+    "extra-paneer-manchurian": "paneer-manchurian",
+    "extra-papdi-chaat": "papdi-chaat",
+    "extra-pepper-chicken": "pepper-chicken",
+    "extra-sabudana-vada": "sabudana-vada",
+    "extra-samosa": "samosa",
+    "extra-samosa-chaat": "samosa-chaat",
+    "extra-shahi-paneer": "paneer-butter",
+    "extra-vada-pav": "vada-pav",
+    "extra-veg-momos": "momos",
+    "fresh-chutney": "vegetable-chutney",
+    "fried-idli": "fried-idli",
+    "fruit-custard": "fruit-custard",
+    "fruit-salad": "fruit-salad",
+    "fryums": "fryums",
+    "garlic-rasam": "rasam",
+    "gatte-ki-sabzi": "dry-sabzi",
+    "ghee": "ghee",
+    "ghee-plain-roti": "ghee-roti",
+    "ginger-tea": "tea",
+    "green-salad": "salad",
+    "gulab-jamun": "gulab-jamun",
+    "gutti-vankaya-semi-gravy": "dry-sabzi",
+    "horlicks": "malt-drink",
+    "hot-milk": "milk",
+    "indore-poha": "poha",
+    "instant-pickle": "pickle",
+    "jalebi": "jalebi",
+    "jam": "jam",
+    "jeera-mint-raita": "raita",
+    "jeera-rice": "jeera-rice",
+    "kabuli-chana-mixed-vegetable-curry": "chana-curry",
+    "kadai-paneer": "paneer-curry",
+    "kaddu-dal-south-indian-style": "dal",
+    "kadhi-pakoda": "kadhi",
+    "kal-dosa": "kal-dosa",
+    "kara-kulambu": "kara-kulambu",
+    "karela-semi-dry": "veg-curry",
+    "lahsuni-dal-tadka": "dal",
+    "lassi": "lassi",
+    "lauki-chana-dal": "lauki-chana",
+    "lauki-sambar": "sambar",
+    "lemon-coriander-rasam": "rasam",
+    "lemon-mint-tea": "lemon-tea",
+    "lemon-tea": "lemon-tea",
+    "lobia-curry": "lobia",
+    "masala-dosa": "masala-dosa",
+    "masoor-dal": "dal",
+    "methi-malai-matar-curry": "methi-matar",
+    "methi-malai-matar-paneer": "methi-matar-paneer",
+    "milk": "milk",
+    "milk-hot-or-cold": "milk",
+    "mirch-ka-salan": "veg-curry",
+    "mirchi-ka-thecha": "herb-chutney",
+    "mixed-dal": "dal",
+    "mixed-sprouts": "sprouts",
+    "mixed-vegetable-pickle": "pickle",
+    "mixed-vegetable-sambar": "sambar",
+    "moong-dal": "dal",
+    "muskmelon": "muskmelon",
+    "mysore-bajji": "bajji",
+    "oats": "oats",
+    "onion-aloo-paratha": "onion-paratha",
+    "onion-raita": "raita",
+    "onion-sambar": "sambar",
+    "palli-podi": "podi",
+    "pancharatna-dal": "dal",
+    "paneer-butter-masala": "paneer-butter",
+    "paneer-dum-biryani": "paneer-biryani",
+    "paneer-kolhapuri": "paneer-curry",
+    "papad": "papad",
+    "papad-or-fryums": "papad",
+    "papaya": "papaya",
+    "papaya-muskmelon-rotation-unconfirmed": "papaya",
+    "pappu-charu": "rasam",
+    "pav-bhaji": "pav-bhaji",
+    "peanut-chutney": "peanut-chutney",
+    "pepper-egg-curry": "egg-curry",
+    "pepper-egg-curry-paneer-butter-masala": "egg-curry",
+    "pepper-rasam": "rasam",
+    "pesarattu": "pesarattu",
+    "pineapple": "pineapple",
+    "plain-idli": "idli",
+    "plain-rasam": "rasam",
+    "plain-roti": "roti",
+    "plain-tea": "tea",
+    "podi": "podi",
+    "pongal": "pongal",
+    "pudina-chutney": "herb-chutney",
+    "pumpkin-sambar": "sambar",
+    "punugulu": "punugulu",
+    "puri": "puri",
+    "radish-or-lauki-sambar": "sambar",
+    "radish-sambar": "sambar",
+    "ragi-idli": "ragi-idli",
+    "rajma": "rajma",
+    "rasmalai": "rasmalai",
+    "raw-banana-fry": "dry-sabzi",
+    "rice": "rice",
+    "ridge-gourd-chana-curry": "veg-curry",
+    "sambar": "sambar",
+    "semiya-payasam": "payasam",
+    "semiya-upma": "semiya-upma",
+    "sev-poha": "sev-poha",
+    "soya-chilli": "soya-chilli",
+    "sprouts": "sprouts",
+    "tamarind-rice": "tamarind-rice",
+    "tea": "tea",
+    "tomato-chutney": "tomato-chutney",
+    "tomato-dal": "dal",
+    "tomato-dal-tadka": "dal",
+    "tomato-rasam": "rasam",
+    "toor-dal": "dal",
+    "uttapam": "uttapam",
+    "vada": "vada",
+    "vegetable-chatpata": "dry-sabzi",
+    "vegetable-chutney": "vegetable-chutney",
+    "vegetable-fried-rice": "fried-rice",
+    "vegetable-jaipuri": "veg-curry",
+    "vegetable-korma": "korma",
+    "vegetable-manchurian": "veg-manchurian",
+    "vegetable-pulao": "pulao",
+    "vegetable-tawa-sabzi": "veg-curry",
+    "watermelon": "watermelon"
+  }
+}
