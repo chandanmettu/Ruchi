@@ -102,7 +102,7 @@
   function renderLog(){
     $('log-date').textContent='Today · '+date.toLocaleDateString('en-IN',{weekday:'short',day:'numeric',month:'short'});
     const rows=Object.entries(log);
-    if(window.RuchiPlate){window.RuchiPlate.render(rows,artwork);return;}
+    if(window.RuchiPlate){window.RuchiPlate.render(rows,artwork,window.RuchiPlate.loggingStreak(localStorage,intakePrefix,iso(today())));return;}
     $('log-items').innerHTML=rows.map(([key,r],i)=>`<div class="log-row"><div><h3>${escape(r.name)}</h3><p>${escape(r.meal)} · ${fmt(r.quantity)} portions</p></div><button data-edit="${i}">Edit</button></div>`).join('');
   }
   function setMeasure(value){measure=measureEnabled&&value;$('measure').checked=measure;document.body.classList.toggle('measuring',measure);$('intake-bar').hidden=!!$('plate-dock')||!measure;$('measure-hint').hidden=!measure;renderMenu('measure');}

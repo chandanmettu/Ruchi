@@ -13,6 +13,26 @@
       return {value,known,estimated,total:rows.length};
     });
   }
+  function loggingStreak(storage,prefix,todayISO){
+    const logged=new Set();
+    try{
+      for(let i=0;i<storage.length;i++){
+        const key=storage.key(i);
+        if(!key?.startsWith(prefix))continue;
+        const day=key.slice(prefix.length);
+        if(!/^\d{4}-\d{2}-\d{2}$/.test(day))continue;
+        const entries=JSON.parse(storage.getItem(key)||'{}');
+        if(entries&&typeof entries==='object'&&Object.values(entries).some(row=>row&&Number.isFinite(row.quantity)&&row.quantity>=.5&&row.item))logged.add(day);
+      }
+    }catch{return 0;}
+    const day=new Date(`${todayISO}T12:00:00Z`);
+    if(Number.isNaN(day.getTime()))return 0;
+    const key=()=>day.toISOString().slice(0,10);
+    if(!logged.has(key()))day.setUTCDate(day.getUTCDate()-1);
+    let count=0;
+    while(logged.has(key())){count++;day.setUTCDate(day.getUTCDate()-1);}
+    return count;
+  }
   function fillNutrition(n,preset){
     const values=n||preset;
     fields.forEach(field=>{const el=$('plate-'+field);if(el)el.value=typeof values?.[field]==='number'?values[field]:'';});
@@ -28,9 +48,9 @@
     const isPreset=preset&&fields.every(field=>values[field]===preset[field]);
     return {...values,source:isPreset?'estimated':'user-entered',serving:preset?.serving||null};
   }
-  function render(rows,artwork){
+  function render(rows,artwork,streak=0){
     const nutrients=totals(rows),portions=rows.reduce((n,[,r])=>n+r.quantity,0);
-    $('log-summary').innerHTML=`<div class="plate-day-summary"><span>${rows.length} ${rows.length===1?'dish':'dishes'}</span><span>${fmt(portions)} ${portions===1?'portion':'portions'}</span><span>Across your day</span></div><div class="plate-macros">${nutrients.map((n,i)=>`<div class="plate-macro"><span>${titles[i]}</span><strong>${n.known&&n.estimated?'≈':''}${n.known?fmt(n.value):rows.length?'—':'0'}<small>${i?'g':'kcal'}</small></strong><small>${!rows.length?'Your day starts here':n.known===n.total?(n.estimated?'Includes estimates':'Entered values'):n.known?`${n.known}/${n.total} dishes counted`:'Not available yet'}</small></div>`).join('')}</div>${rows.length?'<p class="plate-data-note">Estimates use typical cooked portions, not measured mess recipes. Actual amounts vary with serving size, oil, sugar and preparation. You can edit values per dish; missing values are not counted. For general awareness only, not medical advice.</p>':''}`;
+    $('log-summary').innerHTML=`<div class="plate-day-summary"><span>${rows.length} ${rows.length===1?'dish':'dishes'}</span><span>${fmt(portions)} ${portions===1?'portion':'portions'}</span><span>Across your day</span></div><div class="plate-streak"><span aria-hidden="true">✦</span><div><strong>${streak} ${streak===1?'day':'days'} of food logging</strong><small>${streak?'Keep logging meals to continue your streak.':'Add a dish today to start a streak.'} Logged days reflect your own entries, not verified mess attendance.</small></div></div><div class="plate-macros">${nutrients.map((n,i)=>`<div class="plate-macro"><span>${titles[i]}</span><strong>${n.known&&n.estimated?'≈':''}${n.known?fmt(n.value):rows.length?'—':'0'}<small>${i?'g':'kcal'}</small></strong><small>${!rows.length?'Your day starts here':n.known===n.total?(n.estimated?'Includes estimates':'Entered values'):n.known?`${n.known}/${n.total} dishes counted`:'Not available yet'}</small></div>`).join('')}</div>${rows.length?'<p class="plate-data-note">Estimates use typical cooked portions, not measured mess recipes. Actual amounts vary with serving size, oil, sugar and preparation. You can edit values per dish; missing values are not counted. For general awareness only, not medical advice.</p>':''}`;
     const groups=['Breakfast','Lunch','Snacks','Dinner'];
     $('log-items').innerHTML=rows.length?groups.map(meal=>{
       const entries=rows.map(([key,r],i)=>({key,r,i})).filter(x=>x.r.meal===meal);
@@ -39,5 +59,5 @@
     }).join(''):`<div class="plate-empty"><svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="32"/><circle cx="40" cy="40" r="23"/><path d="M31 40h18m-9-9v18"/></svg><h3>A good day starts with a plate.</h3><p>Add the dishes you eat. Breakfast to dinner,<br>they all come together here.</p><button class="primary-button" data-start-plate>Build my plate <span aria-hidden="true">→</span></button></div>`;
     $('reset-day').hidden=!rows.length;
   }
-  window.RuchiPlate={totals,fillNutrition,readNutrition,render};
+  window.RuchiPlate={totals,loggingStreak,fillNutrition,readNutrition,render};
 })();

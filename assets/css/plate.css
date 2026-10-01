@@ -15,6 +15,7 @@
 .final-menu #measure-stats { display:none!important; }
 .final-menu .measure-hint { margin:0 0 18px; max-width:100%; }
 .final-menu .menu-actions { gap:8px; }
+.final-menu .menu-freshness-note { margin:8px 0 19px; color:var(--muted); font-size:11px; line-height:1.4; }
 .final-menu .card-measure { border-top:1px solid var(--line); }
 .final-menu .add-button { background:var(--selected); color:var(--on-selected); border:1px solid var(--selected); min-height:40px; border-radius:22px; }
 .final-menu .add-button.added { background:var(--accent-soft); color:var(--accent); border-color:transparent; }
@@ -26,6 +27,10 @@
 .final-menu .log-summary { display:block; background:none; padding:0; margin:0 0 24px; }
 .plate-day-summary { display:flex; gap:8px; align-items:center; color:var(--muted); font-size:12px; margin:0 0 16px; }
 .plate-day-summary span+span::before { content:'·'; margin-right:8px; }
+.plate-streak { display:flex; gap:12px; align-items:center; padding:13px 15px; margin:0 0 15px; border:1px solid var(--edge); border-radius:18px; background:var(--accent-soft); }
+.plate-streak>span { display:grid; place-items:center; flex:none; width:34px; height:34px; border-radius:50%; background:var(--surface); color:var(--accent); font-size:20px; }
+.plate-streak strong { display:block; color:var(--ink); font-size:14px; font-weight:600; }
+.plate-streak small { display:block; margin-top:3px; color:var(--muted); font-size:11px; line-height:1.4; }
 .plate-macros { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:9px; }
 .plate-macro { padding:15px; border:1px solid var(--edge); background:linear-gradient(135deg,var(--glass),var(--surface)); border-radius:21px; }
 .plate-macro>span { display:block; font-size:12px; color:var(--muted); }

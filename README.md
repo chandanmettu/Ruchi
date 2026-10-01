@@ -2,6 +2,8 @@
 
 Ruchi is a dining menu companion for IIT Hyderabad. Browse the next seven days of meals, check service hours, filter dishes, and see the prices of paid extras. My Plate lets you log what you eat and see rough per-portion calorie, protein, carbohydrate, and fat estimates that scale with the amount you ate.
 
+For a concise problem statement, distinctive feature, technical stack, and demonstration flow, see the [project overview](docs/PROJECT_OVERVIEW.md).
+
 The current estimates use a static reference table of typical cooked servings; they are not AI calculations or measured mess recipes. You can edit them for your portion. They are for general awareness, not medically validated advice. AI-assisted estimates and daily-goal guidance remain planned.
 
 Try Ruchi at [ruchi.chandanmettu.com](https://ruchi.chandanmettu.com/). The included campus menu data is an example; confirm current dishes and prices at the mess.
@@ -27,6 +29,7 @@ Publish the contents of this repository as a static site, with `index.html` at t
 - Supports card and list views, dietary filters, and saved dishes.
 - Stores My Plate entries and report drafts only in your browser.
 - Prefills editable nutrition estimates for typical servings and scales them with half or full portions.
+- Shows a personal food-log streak from days with at least one My Plate entry. This does not verify mess attendance.
 - Generates a report email draft for review; it never sends one automatically.
 
 The included menu is a source-backed example, not a live feed. Photos are illustrative and may depict a dish family rather than the exact serving. Uncertain photo matches use a food icon. [Nutrition estimate methods and sources](docs/NUTRITION_ESTIMATES.md) explain the serving assumptions and limitations.
