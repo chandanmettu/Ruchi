@@ -1,8 +1,10 @@
 # Ruchi
 
-Ruchi is a dining menu companion for IIT Hyderabad. Browse the next seven days of meals, check service hours, filter dishes, and see the prices of paid extras.
+Ruchi is a dining menu companion for IIT Hyderabad. Browse the next seven days of meals, check service hours, filter dishes, and see the prices of paid extras. My Plate lets you log what you eat and review nutrition totals when you add nutrition values.
 
-This is a standalone menu edition adapted from the earlier Ruchi app. It is intended to deploy independently on its own domain. The included campus menu data is an example, not an official source of current dishes or prices.
+AI-assisted nutrition estimates and daily-goal guidance are planned. The aim is to give you a rough overview of your diet and help you build healthier habits. Any future estimates will be approximate, not medically validated, and not a substitute for professional dietary or medical advice.
+
+Try Ruchi at [ruchi.chandanmettu.com](https://ruchi.chandanmettu.com/). The included campus menu data is an example; confirm current dishes and prices at the mess.
 
 ## Run locally
 
@@ -16,7 +18,7 @@ Open <http://localhost:8012>. No account, package installation, build step, or b
 
 ## Deploy
 
-Publish the contents of this repository as a static site, with `index.html` at the web root. Use HTTPS. Add the new domain's canonical URL to both entry pages once the domain is chosen, then verify the menu, Extras, images, and credits on the actual domain. This repository does not deploy the separate Ruchi site at `ruchi.iith.online`.
+Publish the contents of this repository as a static site, with `index.html` at the web root. Use HTTPS and verify the menu, Extras, images, and photo credits on the published domain.
 
 ## What it does
 
